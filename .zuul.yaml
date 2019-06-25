@@ -1,0 +1,16 @@
+- nodeset:
+    name: emea-node
+    nodes:
+      - name: node
+        label: ubuntu-bionic
+        
+- job:
+    name: checklabel
+    run: playbooks/checklabel.yaml
+    parent: base
+
+- project:
+    checklabel:
+      jobs:
+       - checklabel:
+           nodeset: emea-node
