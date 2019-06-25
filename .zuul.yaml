@@ -6,7 +6,7 @@
         
 - job:
     name: checklabel
-    run: playbooks/checklabel.yaml
+    run: playbooks/printlabel.yaml
     parent: base
 
 - project:
