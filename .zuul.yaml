@@ -1,4 +1,8 @@
-      
+- nodeset:
+    name: emea-node
+    nodes:
+      - name: node
+        label: ubuntu-bionic      
 #- job:
 #    name: checklabel
 #    run: playbooks/checklabel.yaml
@@ -8,7 +12,7 @@
     name: printlabel
     run: playbooks/printlabel.yaml
     parent: location
-#    nodeset: emea-node
+    nodeset: emea-node
  
 
 - project:
