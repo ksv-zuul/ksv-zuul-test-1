@@ -14,7 +14,7 @@
     name: printlabel
     run: playbooks/printlabel.yaml
     parent: location
-    nodes: emea-node
+    nodeset: emea-node
  
 
 - project:
