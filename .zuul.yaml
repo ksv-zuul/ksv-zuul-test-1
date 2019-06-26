@@ -12,7 +12,9 @@
 - job:
     name: printlabel
     run: playbooks/printlabel.yaml
-    parent: location
+    parent: base
+    dependencies:
+      - location
     nodeset: emea-node
  
 
