@@ -3,8 +3,6 @@
     nodes:
       - name: centos1
         label: centos1
-      - name: centos2
-        label: centos2
 
 #- job:
 #    name: checklabel
