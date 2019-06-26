@@ -3,8 +3,7 @@
     nodes:
       - name: centos1
         label: centos1
-      - name: centos2
-        label: centos2
+
 
 #- job:
 #    name: checklabel
@@ -15,7 +14,7 @@
     name: printlabel
     run: playbooks/printlabel.yaml
     parent: location
-    nodeset: emea-node
+    nodes: emea-node
  
 
 - project:
