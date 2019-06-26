@@ -1,7 +1,7 @@
-- job:
-    name: checklabel
-    run: playbooks/checklabel.yaml
-    parent: location
+#- job:
+#    name: checklabel
+#    run: playbooks/checklabel.yaml
+#    parent: location
 
 - job:
     name: printlabel
@@ -12,5 +12,5 @@
 - project:
     checklabel:
       jobs:
-       - checklabel
+ #      - checklabel
        - printlabel
