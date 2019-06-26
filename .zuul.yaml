@@ -22,4 +22,5 @@
     checklabel:
       jobs:
  #      - checklabel
+       - location
        - printlabel
