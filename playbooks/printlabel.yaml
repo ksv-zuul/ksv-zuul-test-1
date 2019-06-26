@@ -6,6 +6,6 @@
     - name: change url
       debug:
        msg: "{{ zuul.change_url }}"
-#    - name: return zuul location
-#      debug:
-#        msg: "The zuul location returned is: {{ zuul_location }}"
+    - name: return zuul location
+      debug:
+       msg: "The zuul location returned is: {{ zuul_return_location }}"
