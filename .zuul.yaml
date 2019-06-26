@@ -1,15 +1,8 @@
-- nodeset:
-    name: emea-node
-    nodes:
-      - name: node
-        label: ubuntu-bionic
-        
 - job:
     name: checklabel
     run: playbooks/checklabel.yaml
     parent: location
-    vars:
-      location_name: "emea-node"
+
 - job:
     name: printlabel
     run: playbooks/printlabel.yaml
@@ -20,5 +13,4 @@
     checklabel:
       jobs:
        - checklabel
-       - printlabel:
-           nodeset: "{{ location_name }}"
+       - printlabel
