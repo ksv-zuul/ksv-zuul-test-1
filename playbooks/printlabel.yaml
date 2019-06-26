@@ -1,6 +1,5 @@
 - hosts: all
-  gather_facts: true
   tasks:
     - name: pull request dependent job
       debug:
-        msg: "{{ zuul_location }}"
+        msg: "The zuul location returned is: {{ zuul_location }}"
